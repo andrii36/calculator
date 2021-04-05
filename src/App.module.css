@@ -1,0 +1,65 @@
+.app {
+  
+}
+.container{
+  background-color: aliceblue;
+  margin-left: 35%;
+  width: 25%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+.container div{
+  text-align: center;
+}
+.container button{
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+}
+.typedNumbers{
+  grid-column: 2/5;
+  font-size: 30px;
+  font: bold;
+}
+.reset{
+  grid-column: 1/2;
+}
+.reset button{
+  width: 60px;
+}
+.result{
+  grid-column: 2/5;
+  font-size: 30px;
+  font: bold;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
